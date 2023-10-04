@@ -4,9 +4,6 @@
 #   Yiwen Xing:
 #   Chaoyue Yan:
 
-
-set.seed(5)  # set random seed to facilitate debugging
-
 # Q.3
 # setwd("txtfiles") ## comment out of submitted
 a <- scan("4300-0.txt", what = "character", skip = 73, nlines = 32858 - 73)  ## read the text into a
