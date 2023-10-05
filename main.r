@@ -65,7 +65,6 @@ ma_p <- cbind(col1, col2)  ## combine two columns into one matrix (each row: two
 ma_p <- ma_p[which(!is.na(rowSums(ma_p))), ]  ## delete rows containing NA
 
 # Q.8
-
 generate <- function(n) {  ## function to generate an n-words article based on the given texts under standard criteria
   last2 <- NA  ## the second previous word
   last1 <- NA  ## the previous word
@@ -79,7 +78,7 @@ generate <- function(n) {  ## function to generate an n-words article based on t
     if (nrow(tri_gram_candidates) != 0) {
       candidates <- tri_gram_candidates[, 3]  ## if rows exist in triplet submatrix, subtract candidate words in the third column
     } else if (nrow(bi_gram_candidates) != 0) {
-      candidates <- bi_gram_candidates[, 2]  ## else if rows exist in pair submatrix, subtract candidate words in the third column
+      candidates <- bi_gram_candidates[, 2]  ## else if rows exist in pair submatrix, subtract candidate words in the second column
     } else {
       candidates <- common_words_idx[which(!is.na(common_words_idx))]  ## else candidate words are all non-NA words
     }
@@ -95,6 +94,7 @@ generate <- function(n) {  ## function to generate an n-words article based on t
 
 generate(50)  ## generate a 50-word article and print it, under the standard criteria
 
+# Q.9
 generate_only_from_freq <- function(n) {  ## function to generate an n-words article based on the given texts solely under word frequencies
   article <- rep(NA, n)
   for (i in 1:n) {
