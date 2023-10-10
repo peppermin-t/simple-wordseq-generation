@@ -1,8 +1,9 @@
 # Authors: Yinjia Chen (s2520995@ed.ac.uk), Yiwen Xing (s2530703@ed.ac.uk), Chaoyue Yan (s2572326@ed.ac.uk)
 # Contributions:
-#   Yinjia Chen:
-#   Yiwen Xing:
-#   Chaoyue Yan:
+#   Joint completion: We worked on the first, second, and third problems together, and worked on the comment section and the final code simplification. We checked the validity of the code and made the appropriate changes.
+#   Yinjia Chen: Completed questions 8, 9 and 10 independently.
+#   Yiwen Xing: Completed questions 6 and 7 independently.
+#   Chaoyue Yan: Completed questions 4 and 5 independently.
 
 # Q.3
 # setwd("txtfiles") ## comment out of submitted
